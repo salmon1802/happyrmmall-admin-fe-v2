@@ -40,7 +40,7 @@ class Product{
     // 变更商品销售状态
     setProductStatus(productInfo){
         return _mm.request({
-            type    : 'post',
+            type    : 'put',
             url     : '/manage/product/set_sale_status.do',
             data    : productInfo
         });
