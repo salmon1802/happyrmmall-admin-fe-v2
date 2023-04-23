@@ -16,7 +16,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: WEBPACK_ENV === 'dev' 
-            ? '/dist/' : '//s.happyrmmall.cn/happyrmmall-admin-fe-v2/dist/',
+            ? '/dist/' : '//s.wclmall.top/happyrmmall-admin-fe-v2/dist/',
         filename: 'js/app.js'
     },
     resolve: {
@@ -105,11 +105,11 @@ module.exports = {
         },
         proxy : {
             '/manage' : {
-                target: 'http://admin.happyrmmall.cn',
+                target: 'http://admin.wclmall.top',
                 changeOrigin : true
             },
             '/user/logout.do' : {
-                target: 'http://www.happyrmmall.cn',
+                target: 'http://www.wclmall.top',
                 changeOrigin : true
             }
         }
